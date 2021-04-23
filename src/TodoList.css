@@ -92,6 +92,7 @@ button {
     font-size: 1.3rem;
   }
   .todoform input {
+    
     flex-grow: 1;
     border: none;
     background: #f7f1f1;
@@ -117,4 +118,14 @@ button {
   .todoform button {
     font-family: "Quicksand", sans-serif;
     height: 3rem;
+  }
+  @media only screen and (max-width: 600px) {
+    .plus.todoform{
+      display: flex;
+      flex-flow: column nowrap;
+
+    }
+    .todoform input {
+        width: 200px;
+    }
   }
