@@ -1,0 +1,120 @@
+.todobuttons {
+     flex-shrink: 0;
+     padding-left: 0.7rem;
+}
+
+.todobuttons button {
+    border:none;
+    font-size: 1em;
+    margin: 0.4rem;
+    background: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    color: #fff;
+}
+.completed {
+    text-decoration: line-through;
+    
+}
+.plus.todoform {
+    padding-top:30px ;
+}
+.todolist {
+    margin: 4em auto;
+    padding: 2rem 3rem 3rem;
+    max-width: 500px;
+    background: #ff6666;
+    color: #fff;
+    box-shadow: -20 -20 0px 0px rgba(100, 100, 100, 0.1);
+}
+.todolist ul {
+    margin-top: 2.6rem;
+    list-style: none;
+}
+.todolist h1 {
+    font-size: 2.6rem;
+    font-weight: normal;
+    letter-spacing: 0.05rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.todolist h1 span {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+    margin-left: 3px;
+    margin-top: 0.2rem;
+}
+.todo {
+    display: flex;
+    margin: 0 -3rem 4px;
+    padding: 1.1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    word-wrap : break-word;
+}
+.todotask.completed {
+    opacity: 0.6;
+}
+.todotask.completed:before {
+    content :"";
+    position: absolute;
+    top: 50%;
+    left: -0.5rem;
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    animation: strikeitem 0.8s ease-out 0s forwards ;
+}
+.todotask {
+    position: relative;
+    transition: opacity 0,4s linear;
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}
+
+@keyframes strikeitem {
+    to {
+        width : calc(100% + 1rem);
+    }
+}
+
+.todoform {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .todoform label {
+    min-width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+  .todoform input {
+    flex-grow: 1;
+    border: none;
+    background: #f7f1f1;
+    padding: 0 1.5em;
+    font-size: initial;
+  }
+  .todoform button {
+    padding: 0 1.3rem;
+    border: none;
+    background: #ff6666;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background 0.2s ease-out;
+  }
+  .todoform button:hover {
+    background: #ff5e5e;
+  }
+  .todoform input,
+  .todoform button {
+    font-family: "Quicksand", sans-serif;
+    height: 3rem;
+  }
